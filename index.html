@@ -72,8 +72,8 @@
     document.getElementById("restart").addEventListener("click", startGame);
 
     function startGame() {
-        currentQuestion = 0;
-        score = 0;
+        currentQuestion = 0;  // need to defined variable so let currentQuestion = 0;
+        score = 0; // need to defined variable 
         intro.classList.add("hidden");
         end.classList.add("hidden");
         game.classList.remove("hidden");
@@ -81,7 +81,7 @@
     }
 
     function showQuestion() {
-        answered = false;
+        answered = false; // need to defined variable 
         const q = questions[currentQuestion];
 
         document.getElementById("progress").innerText = `Question ${currentQuestion + 1} of ${questions.length}`;
